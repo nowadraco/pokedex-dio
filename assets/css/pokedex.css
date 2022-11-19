@@ -9,8 +9,8 @@
 }
 
 .fire {
-  background-color: #fd7d24;
-  color: #fff;
+  background: linear-gradient(#fd7d24, #fff);
+  color: #000;
 }
 
 .water {
@@ -19,13 +19,13 @@
 }
 
 .electric {
-  background-color: #eed535;
+  background: linear-gradient(#eed535, #fff);
   color: #000;
 } 
 
 .ice {
-  background-color: #51c4e7;
-  color: #fff;
+  background: linear-gradient(#51c4e7, #fff);
+  color: #000;
 }
 
 .ground {
@@ -39,52 +39,52 @@
 }
 
 .poison {
-  background-color: #b97fc9;
-  color: #fff;
+  background: linear-gradient(#b97fc9, #fff);
+  color: #000;
 }
 
 .fighting {
-  background-color: #d56723;
-  color: #fff;
+  background: linear-gradient(#d56723, #fff);
+  color: #000;
 }
 
 .psychic {
-  background-color: #f366b9;
-  color: #fff;
+  background: linear-gradient(#f366b9, #fff);
+  color: #000;
 }
 
 .dark {
-  background-color: #707070;
-  color: #fff;
+  background: linear-gradient(#707070, #fff);
+  color: #000;
 }
 
 .rock {
-  background-color: #a38c21;
-  color: #fff;
+  background: linear-gradient(#a38c21, #fff);
+  color: #000;
 }
 
 .bug {
-  background-color: #729f3f;
-  color: #fff;
+  background: linear-gradient(#729f3f, #fff);
+  color: #000;
 }
 
 .ghost {
-  background-color: #7b62a3;
-  color: #fff;
+  background: linear-gradient(#7b62a3, #fff);
+  color: #000;
 }
 
 .steel {
-  background-color: #9eb7b8;
-  color: #fff;
+  background: linear-gradient(#9eb7b8, #fff);
+  color: #000;
 }
 
 .dragon {
   background: linear-gradient(#53a4cf, f16e57);
-  color: #fff;
+  color: #000;
 }
 
 .fairy {
-  background-color: #fdb9e9;
+  background: linear-gradient(#fdb9e9, #fff);
   color: #000;
 }
 
@@ -130,7 +130,6 @@
   padding: 0;
   margin: 0;
   list-style: none;
-
 }
 
 .pokemon .detail .types .type {
