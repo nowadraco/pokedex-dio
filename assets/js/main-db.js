@@ -1,12 +1,10 @@
-const pokemonList = document.getElementById('pokemonList')
-const loadMoreButton = document.getElementById('loadMoreButton')
 
-const limit = 1
+
+const limit = 1;
 let offset = 0;
 
 function convertPokemonToLi(pokemon) {
     return `
-        <a  href="data-base.html">
             <li class="pokemon ${pokemon.type}">
                 <span class="number">#${pokemon.number}</span>
                 <span class="name">${pokemon.name}</span>
@@ -18,7 +16,6 @@ function convertPokemonToLi(pokemon) {
                         alt="${pokemon.name}">
                 </div>
             </li>
-        </a>
     `
 }
 
