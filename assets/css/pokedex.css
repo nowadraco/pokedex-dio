@@ -177,30 +177,35 @@
   align-items: center;
 }
 
-.pokemondb .numberdb {
-  color: #000;
-  opacity: .3;
-  font-size: 1.5rem;
-  text-align: left;
+.pokemondb .nometipodb{
+  display: flex;
+  align-self: column;
 }
 
-.pokemondb .namedb {
+.pokemondb .nometipodb .namedb {
   color: #000;
   margin-bottom: 0;
   text-transform: capitalize;
   font-size: 1.5rem;
 }
 
+.pokemondb .nometipodb .typesdb {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.pokemondb .numerodb .numberdb {
+  color: #000;
+  opacity: .3;
+  font-size: 1.5rem;
+  text-align: left;
+}
+
 .pokemondb .detaildb {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-}
-
-.pokemondb .typesdb {
-  padding: 0;
-  margin: 0;
-  list-style: none;
 }
 
 .pokemondb .detaildb .typesdb .typedb {
@@ -212,7 +217,7 @@
   text-align: center;
 }
 
-.pokemondb .detaildb img {
+.pokemondb .imgdb img {
   max-width: 100%;
   height: 15rem;
 }
