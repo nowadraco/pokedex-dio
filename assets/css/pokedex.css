@@ -220,6 +220,26 @@
   height: 15rem;
 }
 
+.sobre{
+  background-color: red;
+}
+
+.breeding{
+  background-color: rgb(0, 153, 255);
+}
+
+.statusbase{
+  background-color: rgb(0, 255, 85);
+}
+
+.evolucao{
+  background-color: rgb(238, 255, 0);
+}
+
+.moves{
+  background-color: rgb(255, 0, 170);
+}
+
 @media screen and (min-width: 380px) {
   .pokemons {
     grid-template-columns: 1fr 1fr;
