@@ -1,6 +1,6 @@
 
 
-const limit = 1;
+const limit = 5;
 let offset = 0;
 
 function convertPokemonToLi(pokemon) {
