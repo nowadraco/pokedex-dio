@@ -1,5 +1,5 @@
 const pokemonDetalhes = document.getElementById('pokemonDetalhes');
-const id = 1
+const id = 5
 const urlDetalhes = `https://pokeapi.co/api/v2/pokemon/${id}/`
 
 function convertPokemonDetalhes(pokemon) {
@@ -42,12 +42,12 @@ function convertPokemonDetalhes(pokemon) {
     <section class="statusbase">
     <h3>Status Base</h3>
     <ol>
-    <li>HP: ${pokemon.stats[5].base_stat}</li>
-    <li>Ataque: ${pokemon.stats[4].base_stat}</li>
-    <li>Defesa: ${pokemon.stats[3].base_stat}</li>
-    <li>Especial Ataque: ${pokemon.stats[2].base_stat}</li>
-    <li>Especial Defesa: ${pokemon.stats[1].base_stat}</li>
-    <li>Velocidade: ${pokemon.stats[0].base_stat}</li>
+    <li>HP: ${pokemon.stats[0].base_stat}</li>
+    <li>Ataque: ${pokemon.stats[1].base_stat}</li>
+    <li>Defesa: ${pokemon.stats[2].base_stat}</li>
+    <li>Especial Ataque: ${pokemon.stats[3].base_stat}</li>
+    <li>Especial Defesa: ${pokemon.stats[4].base_stat}</li>
+    <li>Velocidade: ${pokemon.stats[5].base_stat}</li>
     <li>Total: ${pokemon.stats.reduce((acc, curr) => acc + curr.base_stat, 0)}</li>
     </ol>
     </section>
