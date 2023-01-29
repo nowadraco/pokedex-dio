@@ -39,13 +39,6 @@ function convertPokemonDetalhes(pokemon) {
 
     </ol>
     </section>
-    <section class="breeding">
-    <h3>breeding</h3>
-    <ol>
-      <li>Grupos de ovos: Grass, Monster</li>
-      <li>gênero 87.5% Macho, 12.5% fêmea</li>
-      <li>Egg cycles 20 (4,884–5,140 steps)</li>
-    </ol>
     </section>
     <section class="statusbase">
     <h3>Status Base</h3>
@@ -57,14 +50,6 @@ function convertPokemonDetalhes(pokemon) {
     <li>Especial Defesa: ${pokemon.stats[4].base_stat}</li>
     <li>Velocidade: ${pokemon.stats[5].base_stat}</li>
     <li>Total: ${pokemon.stats.reduce((acc, curr) => acc + curr.base_stat, 0)}</li>
-    </ol>
-    </section>
-    <section class="evolucao">
-    <h3>Evoluções</h3>
-    <ol>
-      <li>bulbasaur</li>
-      <li>ivesaur</li>
-      <li>venusaur</li>
     </ol>
     </section>
     <section class="moves">
