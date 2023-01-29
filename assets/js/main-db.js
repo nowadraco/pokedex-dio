@@ -1,4 +1,3 @@
-debugger
 const pokemonDetalhes = document.getElementById('pokemonDetalhes');
 let id = 1
 const urlDetalhes = `https://pokeapi.co/api/v2/pokemon/${id}/`
