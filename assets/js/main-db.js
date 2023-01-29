@@ -1,6 +1,14 @@
+debugger
 const pokemonDetalhes = document.getElementById('pokemonDetalhes');
-const id = 5
+let id = 1
 const urlDetalhes = `https://pokeapi.co/api/v2/pokemon/${id}/`
+
+fetch(urlDetalhes)
+    .then(response => response.json())
+    .then(data => {
+        pokemon = data;
+        pokemonDetalhes.innerHTML = convertPokemonDetalhes(pokemon);
+    });
 
 function convertPokemonDetalhes(pokemon) {
     return `
@@ -61,18 +69,11 @@ function convertPokemonDetalhes(pokemon) {
     </section>
     <section class="moves">
     <h3>Movimentos</h3>
-    <ol>
-        ${pokemon.moves.slice(0, 10).map(move => `<li>${move.move.name}</li>`).join('')}
+    <ol class="movesl">
+        ${pokemon.moves.slice().map(move => `<li>${move.move.name}</li>`).join('')}
     </ol>
 </section>
 
 </section>
     `
 };
-
-fetch(urlDetalhes)
-    .then(response => response.json())
-    .then(data => {
-        pokemon = data;
-        pokemonDetalhes.innerHTML = convertPokemonDetalhes(pokemon);
-    });
