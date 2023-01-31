@@ -8,16 +8,16 @@ let offset = 0;
 
 function convertPokemonToLi(pokemon) {
     return `
-        <a  href="data-base.html">
-            <li class="pokemon ${pokemon.type}">
-                <span class="number">#${pokemon.number}</span>
-                <span class="name">${pokemon.name}</span>
-                <div class="detail">
-                    <ol class="types">
+        <a href="data-base.html" onclick="pokemonId(${pokemon.number})">
+            <li class="pokemon ${pokemon.type}" onclick="pokemonId(${pokemon.number})">
+                <span class="number" onclick="pokemonId(${pokemon.number})">#${pokemon.number}</span>
+                <span class="name" onclick="pokemonId(${pokemon.number})">${pokemon.name}</span>
+                <div class="detail" onclick="pokemonId(${pokemon.number})">
+                    <ol class="types" onclick="pokemonId(${pokemon.number})">
                         ${pokemon.types.map((type) => `<li class="type ${type}">${type}</li>`).join('')}
                     </ol>
                     <img src="${pokemon.photo}"
-                        alt="${pokemon.name}">
+                        alt="${pokemon.name}" onclick="pokemonId(${pokemon.number})">
                 </div>
             </li>
         </a>
@@ -46,3 +46,7 @@ loadMoreButton.addEventListener('click', () => {
         loadPokemonItens(offset, limit);
     };
 });
+
+  function pokemonId(id) {
+    localStorage.setItem("pokemonId", id);
+  }

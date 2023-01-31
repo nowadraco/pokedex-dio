@@ -1,6 +1,9 @@
 const pokemonDetalhes = document.getElementById('pokemonDetalhes');
-let id = 1
+const storedId = localStorage.getItem("pokemonId");
+console.log("Id armazenado: ", storedId);
+var id = storedId
 const urlDetalhes = `https://pokeapi.co/api/v2/pokemon/${id}/`
+
 
 fetch(urlDetalhes)
     .then(response => response.json())
