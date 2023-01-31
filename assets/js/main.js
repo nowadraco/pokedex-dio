@@ -3,7 +3,7 @@ const loadMoreButton = document.getElementById('loadMoreButton');
 
 
 const maxRecords = 151;
-const limit = 8;
+const limit = 16;
 let offset = 0;
 
 function convertPokemonToLi(pokemon) {
