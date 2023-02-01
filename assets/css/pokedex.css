@@ -276,6 +276,29 @@
   height:350px;
 }
 
+.back-button {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  background-color: #807e7e;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.back-button:hover {
+  background-color: #050505;
+}
+
+.back-button i {
+  color: #fff;
+  font-size: 12px;
+}
+
 @media screen and (min-width: 380px) {
   .pokemons {
     grid-template-columns: 1fr 1fr;
